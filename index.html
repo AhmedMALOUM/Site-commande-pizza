@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pizzeria</title>
+    <link rel="stylesheet" href="/static/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+</head>
+<body>
+    <div class="container mt-5">
+        <h1 class="text-center">Bienvenue à la Pizzeria</h1>
+        <div class="row">
+            <!-- Pizza Caviar -->
+            <div class="col-md-4">
+                <div class="card mb-4">
+                    <img src="{{ url_for('static', filename='images/pizzacaviar.jpg') }}" class="card-img-top" alt="Pizza Caviar">
+                    <div class="card-body">
+                        <h5 class="card-title">Pizza Caviar</h5>
+                        <p class="card-text">12.99 €</p>
+                        <form action="/add_to_cart" method="post">
+                            <input type="hidden" name="pizza_id" value="1">
+                            <input type="hidden" name="pizza_name" value="Pizza Caviar">
+                            <input type="hidden" name="pizza_price" value="12.99">
+                            <button type="submit" class="btn btn-primary">Commander</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Pizza La Seguin -->
+            <div class="col-md-4">
+                <div class="card mb-4">
+                    <img src="{{ url_for('static', filename='images/pizzaseguin.jpg') }}" class="card-img-top" alt="Pizza La Seguin">
+                    <div class="card-body">
+                        <h5 class="card-title">Pizza La Seguin</h5>
+                        <p class="card-text">13.99 €</p>
+                        <form action="/add_to_cart" method="post">
+                            <input type="hidden" name="pizza_id" value="2">
+                            <input type="hidden" name="pizza_name" value="Pizza La Seguin">
+                            <input type="hidden" name="pizza_price" value="13.99">
+                            <button type="submit" class="btn btn-primary">Commander</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Pizza La From -->
+            <div class="col-md-4">
+                <div class="card mb-4">
+                    <img src="{{ url_for('static', filename='images/pizzalaform.jpg') }}" class="card-img-top" alt="Pizza La From">
+                    <div class="card-body">
+                        <h5 class="card-title">Pizza La From</h5>
+                        <p class="card-text">14.49 €</p>
+                        <form action="/add_to_cart" method="post">
+                            <input type="hidden" name="pizza_id" value="3">
+                            <input type="hidden" name="pizza_name" value="Pizza La From">
+                            <input type="hidden" name="pizza_price" value="14.49">
+                            <button type="submit" class="btn btn-primary">Commander</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Pizza La Fermière -->
+            <div class="col-md-4">
+                <div class="card mb-4">
+                    <img src="{{ url_for('static', filename='images/pizzalafermiere.jpg') }}" class="card-img-top" alt="Pizza La Fermière">
+                    <div class="card-body">
+                        <h5 class="card-title">Pizza La Fermière</h5>
+                        <p class="card-text">15.99 €</p>
+                        <form action="/add_to_cart" method="post">
+                            <input type="hidden" name="pizza_id" value="4">
+                            <input type="hidden" name="pizza_name" value="Pizza La Fermière">
+                            <input type="hidden" name="pizza_price" value="15.99">
+                            <button type="submit" class="btn btn-primary">Commander</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Pizza La Chausson -->
+            <div class="col-md-4">
+                <div class="card mb-4">
+                    <img src="{{ url_for('static', filename='images/pizzalachausson.jpg') }}" class="card-img-top" alt="Pizza La Chausson">
+                    <div class="card-body">
+                        <h5 class="card-title">Pizza La Chausson</h5>
+                        <p class="card-text">13.49 €</p>
+                        <form action="/add_to_cart" method="post">
+                            <input type="hidden" name="pizza_id" value="5">
+                            <input type="hidden" name="pizza_name" value="Pizza La Chausson">
+                            <input type="hidden" name="pizza_price" value="13.49">
+                            <button type="submit" class="btn btn-primary">Commander</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Pizza La Provençale -->
+            <div class="col-md-4">
+                <div class="card mb-4">
+                    <img src="{{ url_for('static', filename='images/pizzalaprovençale.jpg') }}" class="card-img-top" alt="Pizza La Provençale">
+                    <div class="card-body">
+                        <h5 class="card-title">Pizza La Provençale</h5>
+                        <p class="card-text">16.49 €</p>
+                        <form action="/add_to_cart" method="post">
+                            <input type="hidden" name="pizza_id" value="6">
+                            <input type="hidden" name="pizza_name" value="Pizza La Provençale">
+                            <input type="hidden" name="pizza_price" value="16.49">
+                            <button type="submit" class="btn btn-primary">Commander</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Pizza La Caramba -->
+            <div class="col-md-4">
+                <div class="card mb-4">
+                    <img src="{{ url_for('static', filename='images/pizzalacarromba.jpg') }}" class="card-img-top" alt="Pizza La Caramba">
+                    <div class="card-body">
+                        <h5 class="card-title">Pizza La Caramba</h5>
+                        <p class="card-text">12.99 €</p>
+                        <form action="/add_to_cart" method="post">
+                            <input type="hidden" name="pizza_id" value="7">
+                            <input type="hidden" name="pizza_name" value="Pizza La Caramba">
+                            <input type="hidden" name="pizza_price" value="12.99">
+                            <button type="submit" class="btn btn-primary">Commander</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Pizza L'Orient Express -->
+            <div class="col-md-4">
+                <div class="card mb-4">
+                    <img src="{{ url_for('static', filename='images/pizzaorientale.jpg') }}" class="card-img-top" alt="Pizza L'Orient Express">
+                    <div class="card-body">
+                        <h5 class="card-title">Pizza L'Orient Express</h5>
+                        <p class="card-text">14.99 €</p>
+                        <form action="/add_to_cart" method="post">
+                            <input type="hidden" name="pizza_id" value="8">
+                            <input type="hidden" name="pizza_name" value="Pizza L'Orient Express">
+                            <input type="hidden" name="pizza_price" value="14.99">
+                            <button type="submit" class="btn btn-primary">Commander</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Pizza La Gourmande -->
+            <div class="col-md-4">
+                <div class="card mb-4">
+                    <img src="{{ url_for('static', filename='images/pizzagourmande.jpg') }}" class="card-img-top" alt="Pizza La Gourmande">
+                    <div class="card-body">
+                        <h5 class="card-title">Pizza La Gourmande</h5>
+                        <p class="card-text">13.99 €</p>
+                        <form action="/add_to_cart" method="post">
+                            <input type="hidden" name="pizza_id" value="9">
+                            <input type="hidden" name="pizza_name" value="Pizza La Gourmande">
+                            <input type="hidden" name="pizza_price" value="13.99">
+                            <button type="submit" class="btn btn-primary">Commander</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Pizza La Primeure -->
+            <div class="col-md-4">
+                <div class="card mb-4">
+                    <img src="{{ url_for('static', filename='images/pizzalaprimeuere.jpg') }}" class="card-img-top" alt="Pizza La Primeure">
+                    <div class="card-body">
+                        <h5 class="card-title">Pizza La Primeure</h5>
+                        <p class="card-text">14.99 €</p>
+                        <form action="/add_to_cart" method="post">
+                            <input type="hidden" name="pizza_id" value="10">
+                            <input type="hidden" name="pizza_name" value="Pizza La Primeure">
+                            <input type="hidden" name="pizza_price" value="14.99">
+                            <button type="submit" class="btn btn-primary">Commander</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Pizza La Péloponèse -->
+            <div class="col-md-4">
+                <div class="card mb-4">
+                    <img src="{{ url_for('static', filename='images/pizzalapéloponèse.jpg') }}" class="card-img-top" alt="Pizza La Péloponèse">
+                    <div class="card-body">
+                        <h5 class="card-title">Pizza La Péloponèse</h5>
+                        <p class="card-text">15.49 €</p>
+                        <form action="/add_to_cart" method="post">
+                            <input type="hidden" name="pizza_id" value="11">
+                            <input type="hidden" name="pizza_name" value="Pizza La Péloponèse">
+                            <input type="hidden" name="pizza_price" value="15.49">
+                            <button type="submit" class="btn btn-primary">Commander</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Pizza La Savoyarde -->
+            <div class="col-md-4">
+                <div class="card mb-4">
+                    <img src="{{ url_for('static', filename='images/pizzalasavoyarde.jpg') }}" class="card-img-top" alt="Pizza La Savoyarde">
+                    <div class="card-body">
+                        <h5 class="card-title">Pizza La Savoyarde</h5>
+                        <p class="card-text">16.99 €</p>
+                        <form action="/add_to_cart" method="post">
+                            <input type="hidden" name="pizza_id" value="12">
+                            <input type="hidden" name="pizza_name" value="Pizza La Savoyarde">
+                            <input type="hidden" name="pizza_price" value="16.99">
+                            <button type="submit" class="btn btn-primary">Commander</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Pizza Le Pêcheur -->
+            <div class="col-md-4">
+                <div class="card mb-4">
+                    <img src="{{ url_for('static', filename='images/pizzalepecheur.jpg') }}" class="card-img-top" alt="Pizza Le Pêcheur">
+                    <div class="card-body">
+                        <h5 class="card-title">Pizza Le Pêcheur</h5>
+                        <p class="card-text">17.49 €</p>
+                        <form action="/add_to_cart" method="post">
+                            <input type="hidden" name="pizza_id" value="13">
+                            <input type="hidden" name="pizza_name" value="Pizza Le Pêcheur">
+                            <input type="hidden" name="pizza_price" value="17.49">
+                            <button type="submit" class="btn btn-primary">Commander</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Pizza Puree -->
+            <div class="col-md-4">
+                <div class="card mb-4">
+                    <img src="{{ url_for('static', filename='images/pizzapuree.jpg') }}" class="card-img-top" alt="Pizza Puree">
+                    <div class="card-body">
+                        <h5 class="card-title">Pizza Puree</h5>
+                        <p class="card-text">9.99 €</p>
+                        <form action="/add_to_cart" method="post">
+                            <input type="hidden" name="pizza_id" value="456">
+                            <input type="hidden" name="pizza_name" value="Pizza Puree">
+                            <input type="hidden" name="pizza_price" value="9.99">
+                            <button type="submit" class="btn btn-primary">Commander</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
